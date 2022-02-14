@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory</title>
+</head>
+<body>
+    <script>
+
+        function add7(n) {
+            return n + 7;
+        }
+        console.log(add7(2));
+
+        function multiply(a,b) {
+            return a * b;
+        }
+        console.log(multiply(2,2));
+
+        function capitalize(string) {
+            let firstLetter = string.charAt(0);
+            let otherLetters = string.slice(1);
+            firstLetter = firstLetter.toUpperCase();
+            otherLetters = otherLetters.toLowerCase();
+            return firstLetter + otherLetters;
+        }
+        console.log(capitalize('heLLO'));
+
+        function lastLetter(str) {
+            return str.slice(-1);
+        }
+        console.log(lastLetter('Hello'))
+
+        function fizzBuzz () {
+            let answer = parseInt(prompt('Enter the number you would like to FizzBuzz up to:', ''));
+
+            for (let i = 1; i <= answer; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    console.log('FizzBuzz');
+                } else if (i % 3 == 0) {
+                    console.log('Fizz');
+                } else if (i % 5 == 0) { 
+                    console.log('Buzz');
+                } else {
+                    console.log(i);
+                }
+            }
+        }
+
+        fizzBuzz();
+    </script>
+    
+</body>
+</html>
